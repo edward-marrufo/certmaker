@@ -1,0 +1,6 @@
+{
+  "commonName": "internal-ca",
+  "countryName": "US",
+  "life_time": "1825",
+  "encryption_bits": "4096"
+}
