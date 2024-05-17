@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python3:
+    build: .
+    container_name: 'certmaker'
+    stdin_open: true
+    working_dir: '/work'
+    tty: false
+    volumes:
+      - ./src/:/work

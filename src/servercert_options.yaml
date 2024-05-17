@@ -1,0 +1,8 @@
+{
+  "DNS.1": "www.example.com",
+  "commonName": "www.example.com",
+  "countryName": "US",
+  "life_time": "398",
+  "extendedKeyUsage": "serverAuth",
+  "encryption_bits": "2048"
+}
