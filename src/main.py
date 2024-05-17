@@ -75,13 +75,7 @@ authorityKeyIdentifier = keyid:always,issuer"""
                     if "commonName = Nothing" in line:
                         try:
                             for key, value in optionsDict.items():
-                                if "DNS" in str(key):
-                                    altnamesOutput = f"echo '{key} = {value}' >> {self.fullconfigPath}"
-                                    os.system(altnamesOutput)
-                                elif "IP" in str(key):
-                                    altnamesOutput = f"echo '{key} = {value}' >> {self.fullconfigPath}"
-                                    os.system(altnamesOutput)
-                                elif "countryName" in str(key):
+                                if "countryName" in str(key):
                                     countrynameOutput = f"sed -i 's/countryName = Nothing/countryName = {value}/' {self.fullconfigPath}"
                                     os.system(countrynameOutput)
                                 elif "commonName" in str(key):
